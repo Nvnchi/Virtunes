@@ -1,0 +1,36 @@
+@import url('satoshi.css');
+@import url('alpino.css');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/******* Navigation *******/
+
+header nav {
+    background-color: black;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+header nav .nav-links {
+    font-family: 'Alpino-Regular';
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+header nav #logo {
+    height: 75px;
+    width: 130px;
+    margin-top: 10px;
+}
+
