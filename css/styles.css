@@ -4,8 +4,39 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: black;
 }
 
+h1, h2, h3, h4 {
+    font-family: 'Satoshi', sans-serif;
+    color: white;
+    margin-bottom: 0px;
+}
+
+p, a {
+    font-family: 'Alpino-Regular';
+    color: white;
+}
+
+#t {
+    color: #EADC21;
+}
+
+#u {
+    color: #FFB235; 
+}
+
+#n {
+    color: #D71285;  
+}
+
+#e {
+    color: #44CEFA;
+}
+
+#s {
+    color: #63E2CF;
+}
 /******* Navigation *******/
 
 header nav {
@@ -26,11 +57,94 @@ header nav .nav-links {
     font-weight: bold;
     font-size: 16px;
     text-transform: uppercase;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 10px 20px 10px 20px;
+    margin-top: 10px;
 }
 
 header nav #logo {
     height: 75px;
     width: 130px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
+
+/******* Homepage *******/
+
+.title {
+    text-align: center;
+    font-size: 96px;
+    margin-top: 200px;
+}
+
+.text {
+    text-align: center;
+    font-size: 40px;
+}
+
+.buttonText {
+    font-size: 24px;
+    margin-top: 250px;
+    text-align: center;
+}
+
+.button {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    overflow: hidden;
+    position: relative;
+}
+
+  .button::before,
+  .button::after {
+   content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+
+  .button::before {
+    background: rgb(234,220,33);
+    background: linear-gradient(90deg, rgba(234,220,33,1) 0%, rgba(255,178,53,1) 25%, rgba(215,18,133,1) 50%, rgba(68,206,250,1) 75%, rgba(99,226,207,1) 100%);
+    height: 2px;
+    bottom: 0;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  .button::after {
+    content: attr(data-replace);
+    height: 100%;
+    top: 0;
+    transform-origin: 100% 50%;
+    transform: translate3d(200%, 0, 0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  .button:hover::before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+  }
+
+  .button:hover::after {
+    transform: translate3d(0, 0, 0);
+  }
+  
+
+/******* Who are we *******/
+
+.subTitle {
+    text-align: center;
+    font-size: 48px;
+    margin-top: 100px;
+}
+
+.subText {
+    text-align: center;
+    font-size: 24px;
+    margin: 50px 200px 0px 200px;
+}
+  
 
