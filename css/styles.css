@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: black;
+    overflow: hidden;
 }
 
 h1, h2, h3, h4 {
@@ -146,16 +147,14 @@ header nav #logo {
     margin: 50px 200px 0px 200px;
 }
 
-#username {
-
-}
-
 #password, #username  {
     font-family: 'Alpino-Regular';
     font-size: 16px;
     background-color: black;
-    border: white;
+    border: white 1px solid;
+    border-radius: 50px;
     color: white;
+    padding: 10px 10px 10px 20px;
 }
 
 ::placeholder  {
@@ -171,13 +170,58 @@ header nav #logo {
     font-weight: bold;
     font-size: 16px;
     text-transform: uppercase;
-    border: 1px solid white;
-    border-radius: 30px;
+    background: linear-gradient(black, black) padding-box,
+    linear-gradient(90deg, rgba(234,220,33,1) 0%, rgba(255,178,53,1) 25%, rgba(215,18,133,1) 50%, rgba(68,206,250,1) 75%, rgba(99,226,207,1) 100%) border-box;
+    border-radius: 50em;
+    border: 3px solid transparent;
     padding: 10px 20px 10px 20px;
     background-color: black;
     cursor: pointer;
+    margin-top: 50px;
+}
+ 
+.registerAndLogin {
+    margin: 200px auto auto auto;
+    padding: 30px;
+    grid-area: 1 / 1 / 2 / 2;
 }
 
-.registerAndLogin {
+.registerAndLogin a {
+    text-decoration: none;
+}
+
+.registerAndLogin form label,
+.registerAndLogin form input {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.anotherTitle {
+    text-align: center;
+    font-size: 48px;
+}
+
+.registerAndLoginScreen {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 0px;
     
+}
+
+.image {
+    grid-area: 1 / 2 / 2 / 3;
+    object-fit: cover;
+    max-height: 100%;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 40
 }
