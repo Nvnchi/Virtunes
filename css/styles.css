@@ -303,7 +303,7 @@ font-family: 'Alpino-Regular';
     right: -10%;
 }
 
-#login {
+.login {
     overflow: hidden;
 }
 
@@ -317,4 +317,74 @@ font-family: 'Alpino-Regular';
     justify-content: center;
     gap: 20px;
     margin-top: 50px;
+}
+
+#register {
+    margin-top: 0px;
+}
+
+.firstlastname {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    display: block;
+color: white;
+font-family: 'Alpino-Regular';
+
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left: 20%;
+    margin-top: -80px;
+    object-fit: cover;
+}
+
+.banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    
+}
+
+.info {
+    width: 500px;
+    height: 150px;
+    position: absolute;
+    left: 20%;
+    margin-top: 80px;
+
+}
+
+.full-name {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0px 0px 10px 0px;
+}
+
+.heading1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.username {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    margin: 0px 0px 10px 0px;
+
+}
+
+.bio {
+    margin: 0px 150px 10px 0px;
 }
