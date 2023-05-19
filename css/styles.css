@@ -417,3 +417,9 @@ font-family: 'Alpino-Regular';
     right: 22%;
     margin-top: 20px;
 }
+
+#tickets {
+    position: absolute;
+    left: 20%;
+    margin-top: 300px;
+}
