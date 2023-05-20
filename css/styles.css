@@ -1,6 +1,10 @@
 @import url('satoshi.css');
 @import url('alpino.css');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -48,6 +52,11 @@ header nav {
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 99%;
 }
 
 header nav .nav-links {
@@ -67,7 +76,7 @@ header nav .nav-links {
 header nav #logo {
     height: 75px;
     width: 130px;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 /******* Homepage *******/
@@ -363,7 +372,7 @@ font-family: 'Alpino-Regular';
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    height: 200px;
+    height: 300px;
     object-fit: cover;
     margin-top: 10px;
     
@@ -403,6 +412,10 @@ font-family: 'Alpino-Regular';
     margin: 0px 150px 10px 0px;
 }
 
+.genres {
+    font-style: italic;
+}
+
 .small-btn {
     text-decoration: none;
     color: white;
@@ -423,3 +436,67 @@ font-family: 'Alpino-Regular';
     left: 20%;
     margin-top: 300px;
 }
+
+#history {
+    position: absolute;
+    left: 30%;
+    margin-top: 310px;
+}
+
+.ticketImage, .ticketImage2 {
+    height: 200px;
+    width: 250px;
+    object-fit: cover;
+}
+
+.ticketInfo {
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 50%, rgba(255,255,255,0) 100%);
+    margin-top: -90px;
+    width: 250px;
+    z-index: 1;
+    position: absolute;
+}
+
+.tickets, .tickets2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: normal;
+    position: absolute;
+    z-index: -1;
+    left: 20%;
+    gap: 20px;
+}
+
+
+.ticketText{
+    margin-left: 10px;
+    line-height: 20px;
+}
+
+.ticketImage {
+    margin-top: 370px;
+}
+
+.ticketImage2 {
+    margin-top: 600px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(234,220,33);
+    background: linear-gradient(180deg, rgba(234,220,33,1) 0%, rgba(255,178,53,1) 25%, rgba(215,18,133,1) 50%, rgba(68,206,250,1) 75%, rgba(99,226,207,1) 100%);
+  }
+  
