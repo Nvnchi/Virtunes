@@ -23,6 +23,7 @@ p, a {
     color: white;
 }
 
+
 #t {
     color: #EADC21;
 }
@@ -84,7 +85,7 @@ header nav #logo {
 .title {
     text-align: center;
     font-size: 96px;
-    margin-top: 200px;
+    margin-top: 250px;
 }
 
 .text {
@@ -456,6 +457,7 @@ font-family: 'Alpino-Regular';
     width: 250px;
     z-index: 1;
     position: absolute;
+    margin-bottom: 500px;
 }
 
 .tickets, .tickets2 {
@@ -500,3 +502,8 @@ font-family: 'Alpino-Regular';
     background: linear-gradient(180deg, rgba(234,220,33,1) 0%, rgba(255,178,53,1) 25%, rgba(215,18,133,1) 50%, rgba(68,206,250,1) 75%, rgba(99,226,207,1) 100%);
   }
   
+  #end {
+    position: absolute;
+    margin-top: 1000px;
+    color: transparent;
+  }
