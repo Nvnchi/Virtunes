@@ -149,7 +149,7 @@ header nav #logo {
 .subTitle {
     text-align: center;
     font-size: 48px;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .subText {
@@ -314,6 +314,31 @@ font-family: 'Alpino-Regular';
     right: -10%;
 }
 
+#yellow3 {
+    top: 11%;
+    right: 76%;
+}
+
+#orange3 {
+    top: 41%;
+    right: 50%;
+}
+
+#pink3 {
+    top: 5%;
+    right: 35%;
+}
+
+#blue3 {
+    top: 40%;
+    right: -5%;
+}
+
+#cyan3 {
+    top: -1%;
+    right: 0%;
+}
+
 .login {
     overflow: hidden;
 }
@@ -322,16 +347,31 @@ font-family: 'Alpino-Regular';
     height: 40px;
 }
 
+.facebook {
+    height: 40px;
+}
+
+.google {
+    height: 45px;
+}
+
 #loginbuttons {
+    margin-top: 20px;
+}
+
+#loginbuttons, #loginbuttons2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 20px;
-    margin-top: 50px;
+}
+
+#loginbuttons2 {
+    margin-top: -5px;
 }
 
 #register {
-    margin-top: 25px;
+    margin-top: 10px;
 }
 
 .firstlastname {
@@ -432,6 +472,7 @@ font-family: 'Alpino-Regular';
     margin-top: 20px;
 }
 
+<<<<<<< Updated upstream
 #tickets {
     position: absolute;
     left: 20%;
@@ -507,3 +548,11 @@ font-family: 'Alpino-Regular';
     margin-top: 1000px;
     color: transparent;
   }
+=======
+.subsubText {
+    text-align: center;
+    font-size: 24px;
+    margin: 50px 200px 0px 200px;
+    font-style: italic;
+}
+>>>>>>> Stashed changes
