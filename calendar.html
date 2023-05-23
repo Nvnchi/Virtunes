@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/zwartIcon.svg">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.7/index.global.min.js'%3E></script>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+          var calendarEl = document.getElementById('calendar');
+          var calendar = new FullCalendar.Calendar(calendarEl, {
+            initialView: 'dayGridMonth',
+            events: [
+    {
+      start: '2023-05-31',
+      end: '2023-05-31',
+      title: 'Ed Sheeran',
+      display: 'background'
+    },
+    {
+      start: '2023-06-01',
+      end: '2023-06-01',
+      title: 'LAUV',
+      display: 'background'
+    },
+    {
+      start: '2023-06-03',
+      end: '2023-06-03',
+      title: 'PRETTYMUCH',
+      display: 'background'
+    },
+    {
+      start: '2023-06-12',
+      end: '2023-06-12',
+      title: 'Adele',
+      display: 'background'
+    },
+    {
+      start: '2023-06-16',
+      end: '2023-06-16',
+      title: 'JVKE',
+      display: 'background'
+    },
+    {
+      start: '2023-06-24',
+      end: '2023-06-24',
+      title: 'Newjeans',
+      display: 'background'
+    },
+    {
+      start: '2023-06-04',
+      end: '2023-06-04',
+      title: 'Ashnikko',
+      display: 'background'
+    },
+    {
+      start: '2023-05-28',
+      end: '2023-05-28',
+      title: 'BTS',
+      display: 'background'
+    },
+    {
+      start: '2023-05-04',
+      end: '2023-05-04',
+      title: 'Ice Spice',
+      display: 'background'
+    },
+    {
+      start: '2023-05-15',
+      end: '2023-05-15',
+      title: 'Lewis Capaldi',
+      display: 'background'
+    },
+    {
+      start: '2023-05-24',
+      end: '2023-05-24',
+      title: 'Labrinth',
+      display: 'background'
+    },
+  ]
+          });
+          calendar.render();
+        });
+  
+      </script>
+    <title>Calendar</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div id="logo"><a href="index.html"><img src="./images/witLogo.svg" alt="Logo Virtunes wit"></a></div>
+            <div>
+            <a class="nav-links" href="profile.html">profile</a>
+            </div>
+        </nav>
+    </header>
+
+    <div id='calendar'></div>
+
+</body>
+</html>
