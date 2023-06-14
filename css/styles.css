@@ -644,3 +644,74 @@ font-family: 'Alpino-Regular';
     margin-top: 600px;
 }
 
+.buttonText2 {
+    visibility: hidden;
+}
+
+.concerts {
+    display: flex;
+    position: absolute;
+    left: 20%;
+    margin-top: 420px;
+    gap: 20px;
+}
+
+.concert {
+    display: flex;
+    width: 250px;
+    height: 80px;
+    border: white 1px solid;
+}
+
+.date {
+    width: 100px;
+    height: 80px;
+    background-color: white;
+}
+
+.date p{
+    color: #242324;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    padding: 15px;
+    margin-top: 0px;
+}
+
+.infoConcert {
+    width: 250px;
+    height: 80px;
+}
+
+.infoConcert p {
+    margin-left: 10px;
+    margin-bottom: -10px;
+}
+
+.infoConcert a {
+    margin-left: 10px;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .buttonText {
+        visibility: hidden;
+    }
+
+    .buttonText2 {
+        font-size: 24px;
+        text-align: center;
+        visibility: visible;
+    }
+
+    .title {
+        font-size: 70px;
+    }
+
+    .text {
+        font-size: 30px;
+    }
+    
+}
+
